@@ -1,29 +1,37 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web'); /*Importação de fonte por referência de navegadores*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+/*Importação de fonte por referência de navegadores*/
+
 @font-face {
     /*Importação de fontes através de uma pasta de fontes*/
     font-family: 'FonteLogo';
-    src: url("../_fonts/bubblegum-sans-regular.otf");
+    src: url("../fonts/bubblegum-sans-regular.otf");
 }
 
+
 /*Estilo da página index*/
+
 body {
     font-family: Arial, sans-serif;
     background-color: #dddddd;
-    color: rgba(0, 0, 0, 1); /*no rgba o ultimo parametro que é o alfa vai de 0 a 1*/
+    color: rgba(0, 0, 0, 1);
+    /*no rgba o ultimo parametro que é o alfa vai de 0 a 1*/
 }
 
 div#interface {
     width: 900px;
     background-color: #ffffff;
-    margin: -20px auto 0px auto; /*a margim é configurada da seguinte forma: cima, direita, baixo e esquerda*/
+    margin: -20px auto 0px auto;
+    /*a margim é configurada da seguinte forma: cima, direita, baixo e esquerda*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
     padding: 10px;
 }
 
 p {
     text-align: justify;
-    text-indent: 50px; /*o text-indent serve para dar um espaço gerando uma marca de paragrafo*/
+    text-indent: 50px;
+    /*o text-indent serve para dar um espaço gerando uma marca de paragrafo*/
 }
 
 a {
@@ -44,7 +52,8 @@ header#cabecalho img#icone {
 header#cabecalho {
     border-bottom: 1px #606060 solid;
     height: 150px;
-    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /* Utilizando url para definir background*/
+    background: url("../imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+    /* Utilizando url para definir background*/
 }
 
 header#cabecalho h1 {
@@ -62,14 +71,16 @@ header#cabecalho h2 {
     color: #888888;
     padding: 0px;
     margin-top: 0px;
-
 }
 
+
 /*Formatação de imagens com legendas*/
+
 figure.foto-legenda {
     position: relative;
     border: 8px solid white;
-    box-shadow: 1px 1px 4px black; /*o box shadow é um atributo utilizado para criar sombras*/
+    box-shadow: 1px 1px 4px black;
+    /*o box shadow é um atributo utilizado para criar sombras*/
 }
 
 figure.foto-legenda img {
@@ -86,32 +97,42 @@ figure.foto-legenda figcaption {
     width: 100%;
     height: 100%;
     padding: 10px;
-    box-sizing: border-box; /*o box size serve para definir o tamanho do box*/
-    transition: opacity 1s; /*neste caso com a opção border-box ele  cria o box dentro da borda*/
+    box-sizing: border-box;
+    /*o box size serve para definir o tamanho do box*/
+    transition: opacity 1s;
+    /*neste caso com a opção border-box ele  cria o box dentro da borda*/
 }
 
-figure.foto-legenda:hover figcaption { /*hover é o efeito que é aplicado quando se passa o mouse por cima do objeto*/
+figure.foto-legenda:hover figcaption {
+    /*hover é o efeito que é aplicado quando se passa o mouse por cima do objeto*/
     opacity: 1;
 }
 
+
 /*Formatação do menu*/
-nav#menu { /*sempre que se for fazer formatação pelo id deve se colocar uma hashtag depois da tag*/
+
+nav#menu {
+    /*sempre que se for fazer formatação pelo id deve se colocar uma hashtag depois da tag*/
     display: block;
 }
 
 nav#menu ul {
     list-style: none;
     text-transform: uppercase;
-    position: absolute; /*posição absoluta eu posso mover o objeto dentro do documento inteiro */
-    top: -20px; /*posição relativa somente dentro da tag container a qual o objeto esta confinado*/
+    position: absolute;
+    /*posição absoluta eu posso mover o objeto dentro do documento inteiro */
+    top: -20px;
+    /*posição relativa somente dentro da tag container a qual o objeto esta confinado*/
     left: 480px;
 }
 
 nav#menu li {
     display: inline-block;
     background-color: #dddddd;
-    padding: 10px; /*padding é o espaçamento interno da borda*/
-    margin: 2px; /*margin é o espaçamento externo da borda*/
+    padding: 10px;
+    /*padding é o espaçamento interno da borda*/
+    margin: 2px;
+    /*margin é o espaçamento externo da borda*/
     transition: background-color 1s;
 }
 
@@ -167,7 +188,6 @@ header#cabecalhoArtigo h2 {
 header#cabecalhoArtigo h3 {
     font-size: 12px;
     color: #606060;
-
 }
 
 .direita {
@@ -218,7 +238,8 @@ table#tabelaspec caption span {
 aside#lateral {
     display: block;
     width: 350px;
-    float: right; /*para se usar o float devemos estar com os objetos configurados em bloco, assim podemos colocalos flutuar um ao lado do outro*/
+    float: right;
+    /*para se usar o float devemos estar com os objetos configurados em bloco, assim podemos colocalos flutuar um ao lado do outro*/
     background-color: #dddddd;
     padding: 10px;
     margin-top: 10px;
@@ -239,7 +260,7 @@ aside#lateral h2 {
     padding: 5px;
 }
 
-video#filme{
+video#filme {
     width: 350px;
 }
 
